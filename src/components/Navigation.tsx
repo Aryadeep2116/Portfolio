@@ -6,6 +6,7 @@ import { useScrolled } from "@/hooks/useScrolled";
 import { cn } from "@/utils/cn";
 import { Button } from "./ui/Button";
 import { ThemeToggle } from "./ThemeToggle";
+import { BrandMark } from "./ui/BrandMark";
 import { ScrollProgress } from "./ScrollProgress";
 
 const anchorLinks = [
@@ -90,12 +91,9 @@ export function Navigation() {
           className="group flex items-center gap-2.5 rounded-lg py-1.5 pr-2"
           aria-label={`${site.name} — home`}
         >
-          <span
-            aria-hidden
-            className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-[9px] bg-accent-solid text-[0.8125rem] font-bold text-accent-solid-fg transition-transform duration-300 group-hover:scale-105 group-hover:-rotate-3"
-          >
-            {site.initials}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+          <span className="relative transition-transform duration-200 group-hover:scale-[1.03]">
+            <BrandMark size={32} />
+            <span className="absolute inset-0 -translate-x-full rounded-[9px] bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
           </span>
           <span className="text-[0.9375rem] font-semibold tracking-[-0.01em] text-fg">
             {site.name}

@@ -73,7 +73,7 @@ export function Hero() {
               <span className="text-eyebrow text-muted">{site.positioning}</span>
             </div>
 
-            <h1 id="hero-heading" className="text-hero line-mask mt-7 text-fg">
+            <h1 id="hero-heading" className="text-hero line-mask mt-4 text-fg">
               {HEADLINE.map((line, i) => (
                 <span key={line.text} className="line-mask-line">
                   <span

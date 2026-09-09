@@ -3,6 +3,7 @@ import { Mail } from "lucide-react";
 import { site } from "@/data/site";
 import { track } from "@/lib/analytics";
 import { GithubIcon, LinkedinIcon } from "./ui/BrandIcons";
+import { BrandMark } from "./ui/BrandMark";
 
 const year = new Date().getFullYear();
 
@@ -20,12 +21,7 @@ export function Footer() {
           {/* Brand */}
           <div className="max-w-sm">
             <Link to="/" className="flex items-center gap-2.5" aria-label={`${site.name} — home`}>
-              <span
-                aria-hidden
-                className="flex h-8 w-8 items-center justify-center rounded-[9px] bg-accent-solid text-[0.8125rem] font-bold text-accent-solid-fg"
-              >
-                {site.initials}
-              </span>
+              <BrandMark size={32} />
               <span className="text-[0.9375rem] font-semibold text-fg">{site.name}</span>
             </Link>
             <p className="mt-4 text-small text-fg-2">

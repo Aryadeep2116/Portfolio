@@ -114,8 +114,20 @@ export function ContactForm() {
         });
         if (!res.ok) throw new Error("Request failed");
       } else {
-        // Demo mode — no backend connected yet. Simulate network latency.
-        await new Promise((r) => setTimeout(r, 900));
+        // No server is required: open the visitor's mail client with a complete draft.
+        const subject = `${fields.project || "New project enquiry"} — ${fields.name}`;
+        const body = [
+          `Hi Aryadeep,`,
+          "",
+          `Name: ${fields.name}`,
+          `Reply email: ${fields.email}`,
+          `Project type: ${fields.type || "Not specified"}`,
+          `Budget: ${fields.budget || "Not specified"}`,
+          `Timeline: ${fields.timeline || "Not specified"}`,
+          "",
+          fields.details,
+        ].join("\\n");
+        window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       }
       setStatus("success");
       track("contact_form_submitted", { type: fields.type });
