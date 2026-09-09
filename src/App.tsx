@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { OfflineBanner } from "@/components/OfflineBanner";
+import { CursorGlow } from "@/components/CursorGlow";
+import { IntroName } from "@/components/IntroName";
 import Home from "@/pages/Home";
 import Work from "@/pages/Work";
 import CaseStudy from "@/pages/CaseStudy";
@@ -45,6 +47,8 @@ export default function App() {
 
       {/* Ambient film grain — texture only, never interactive */}
       <div aria-hidden className="grain pointer-events-none fixed inset-0 z-[100]" />
+      <CursorGlow />
+      <IntroName />
 
       <Navigation />
 

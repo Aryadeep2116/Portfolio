@@ -4,6 +4,7 @@ import { track } from "@/lib/analytics";
 import { ContactForm } from "@/components/ContactForm";
 import { CopyEmail } from "@/components/CopyEmail";
 import { GithubIcon } from "@/components/ui/BrandIcons";
+import { Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 
@@ -64,6 +65,11 @@ export function Contact() {
               <p className="text-small font-semibold text-fg">Email me directly</p>
               <CopyEmail className="self-start" />
             </div>
+
+            <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="group flex items-center gap-3 self-start text-small font-medium text-fg-2 transition-colors hover:text-link">
+              <Phone size={16} aria-hidden />
+              <span>{site.phone}</span>
+            </a>
 
             <div className="flex flex-col gap-3">
               <p className="text-small font-semibold text-fg">Or find me here</p>

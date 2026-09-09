@@ -9,15 +9,16 @@
 
 export const site = {
   // CONFIG: replace with your real name / wordmark
-  name: "Alex Morgan",
-  initials: "AM",
+  name: "Aryadeep Biswas",
+  initials: "AB",
 
   role: "Frontend Developer",
   positioning: "Frontend Developer · React · JavaScript · AI Integrations",
   tagline: "Modern websites that feel as good as they work.",
 
   // CONFIG: replace with a professional email address (ideally on your domain)
-  email: "hello@alexmorgan.dev",
+  email: "aryadeepbiswas014@gmail.com",
+  phone: "+91 97483 79277",
 
   location: "Remote — working with clients worldwide",
 
@@ -38,7 +39,7 @@ export const site = {
   links: {
     // CONFIG: point these at your real profiles / repositories
     github: "https://github.com/alexmorgan",
-    linkedin: "https://www.linkedin.com/in/alexmorgan",
+    linkedin: "https://www.linkedin.com/in/aryadeep-biswas-09a416338/",
     builditup: "https://builditup.dpdns.org",
     // CONFIG: BuildItUp source repository — replace with the real repo URL
     builditupSource: "https://github.com/alexmorgan/builditup",
