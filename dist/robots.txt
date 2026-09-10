@@ -1,6 +1,0 @@
-# robots.txt — Alex Morgan portfolio
-User-agent: *
-Allow: /
-
-# TODO: replace with your production domain
-Sitemap: https://alexmorgan.dev/sitemap.xml
