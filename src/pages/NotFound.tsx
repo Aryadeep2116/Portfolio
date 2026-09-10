@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 export default function NotFound() {
   useEffect(() => {
     setPageMeta({
-      title: "Page not found — Alex Morgan",
+      title: "Page not found — Aryadeep Biswas Portfolio",
       description: "The page you're looking for doesn't exist.",
     });
   }, []);

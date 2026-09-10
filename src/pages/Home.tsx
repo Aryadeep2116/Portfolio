@@ -17,7 +17,7 @@ import { Contact } from "@/sections/Contact";
 export default function Home() {
   useEffect(() => {
     setPageMeta({
-      title: "Alex Morgan — Frontend Developer · React · JavaScript · AI Integrations",
+      title: "Aryadeep Biswas Portfolio",
       description:
         "Freelance frontend developer building fast, polished React websites, landing pages and AI-powered web features for startups and businesses. Remote, worldwide.",
       path: "/",

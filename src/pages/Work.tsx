@@ -12,7 +12,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export default function Work() {
   useEffect(() => {
     setPageMeta({
-      title: "Work — Alex Morgan · Frontend Developer",
+      title: "Work — Aryadeep Biswas Portfolio",
       description:
         "Selected projects by Alex Morgan: BuildItUp, an AI-powered project planning product, plus interface and website work. Case studies included.",
       path: "/work",

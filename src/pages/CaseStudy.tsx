@@ -133,7 +133,7 @@ const CHALLENGES = [
 export default function CaseStudy() {
   useEffect(() => {
     setPageMeta({
-      title: "BuildItUp — AI-powered project planning · Case Study — Alex Morgan",
+      title: "BuildItUp Case Study — Aryadeep Biswas Portfolio",
       description:
         "How I designed and built BuildItUp: an AI-powered web app that turns project ideas into structured build plans. Design decisions, architecture, AI workflow and challenges.",
       path: "/work/builditup",
